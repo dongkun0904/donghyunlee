@@ -1,19 +1,23 @@
-html, nav {
+html {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #808080;
 }
 
-h1 {
-    color: #93c7bc;
-    //color: #98fb98;
+body {
+    padding: 0;
+    margin: 0;
 }
 
-body {
+h1 {
+    color: #93c7bc;
+}
+
+div#container {
     background-color: #ffffff;
     margin: 5%;
-    padding: 5%;
+    padding: 1% 5% 1% 5%;
     border-radius: 8%;
-    height: 500px;
+    min-height: 1400px;
 }
 
 #headshot {
@@ -21,4 +25,41 @@ body {
     border: #808080 solid 6px;
     width: 30%;
     float: left;
+    margin: 10px 20px 10px 10px;
+}
+
+nav {
+    background-color: #ffffff;
+    position: fixed;
+}
+
+nav ul#navi {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #93c7bc;
+
+    /*border-radius: 10%;
+    padding-left: 50px;*/
+}
+
+nav li {
+    float: right;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px 30px 16px 0px;
+    text-decoration: none;
+    transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+}
+
+nav a:hover {
+    background-color: #a0a0a0
 }
